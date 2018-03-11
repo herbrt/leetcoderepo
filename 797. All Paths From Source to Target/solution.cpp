@@ -1,3 +1,26 @@
+class Solution {//参考了discuss当中的代码，使用了递归，非常简洁
+public:
+    void bfs(vector<vector<int>>& graph, vector<vector<int>>& res, vector<int> ans, int rsc, int dst){
+        ans.push_back(rsc);
+        if(rsc == dst){
+            res.push_back(ans);
+            return;
+        }
+        for(int i = 0; i < graph[rsc].size(); i++){
+            bfs(graph, res, ans, graph[rsc][i], dst);
+        }
+    }
+    
+    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
+        vector<vector<int>> res;
+        vector<int> ans;
+        int num = graph.size();
+        if(num == 0) return res;
+        bfs(graph, res, ans, 0, num-1);
+        return res;
+    }
+};
+
 /*
 class Solution {//我自己的代码，思路是用栈实现dfs回溯，但是会出现重复路径
 public:
