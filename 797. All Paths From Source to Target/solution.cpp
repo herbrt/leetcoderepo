@@ -47,7 +47,6 @@ public:
                         //st[j] = tmp;//错在这里 我透透透透
                         st[graph[tmp][j]] = tmp;
                         ans.push_back(graph[tmp][j]);
-                        puts("2");
                         break;//其实这里用个递归挺好
                     }
                     else{//保存结果ans
@@ -56,7 +55,6 @@ public:
                         //s.pop();
                         st[graph[tmp][j]] = tmp;
                         ans.pop_back();
-                        puts("3");
                         break;//还有这里
                     }
                 }     
@@ -64,12 +62,9 @@ public:
             if((j>=graph[tmp].size())){
                 //s.pop();
                 ans.pop_back(); 
-                puts("4");
             }
-            puts("5");
         }
 
-        
         return res;
     }
 };
