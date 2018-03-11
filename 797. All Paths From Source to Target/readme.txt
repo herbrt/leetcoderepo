@@ -41,4 +41,5 @@ The symmetry of the two is quite cool.
 Update: As pointed out, take_first() removes and returns the first element in the list. 
 -2018/3/11 20：39
 
-
+我的思路是用栈实现DFS回溯，但我不能解决路径重复的问题，我一直没有想出用什么简单的方法标记已经访问的节点。
+参考了discuss中的代码，使用递归实现的DFS,代码比我简洁许多，而且也不能用流程图显式的表达，由于每一层都用for循环对所有子节点进行访问。因此不存在标记的问题。
