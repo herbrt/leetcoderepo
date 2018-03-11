@@ -7,10 +7,9 @@ public:
         //stack<int> s;
         vector<int> ans;
         int st[size], j;
-        /*会出现重复路径
+        //会出现重复路径
         for(int k = 0; k < size; k++)
             st[k] = -1;
-        */
         //s.push(0);
         ans.push_back(0);
         
@@ -18,10 +17,8 @@ public:
             
             //int tmp = s.top();
             int tmp = ans.back();
-            puts("1");
             for(j = 0; j<graph[tmp].size(); j++){
                 if(st[graph[tmp][j]]!=tmp){
-                    printf("-%d-\n",st[graph[tmp][j]]);
                     if(graph[tmp][j]!=(size-1)){
                         //s.push(graph[tmp][j]);
                         //st[j] = tmp;//错在这里 我透透透透
