@@ -13,7 +13,7 @@ public:
         vector<int> res;
         stack<TreeNode*> s;
         TreeNode* cur = root;
-        while(cur||!s.empty()){
+        while(cur){//while(cur||!s.empty()){ 为什么要判定s是否为空？ 
             s.push(cur);
             cur = cur->left;
             while(!cur&&!s.empty()){
