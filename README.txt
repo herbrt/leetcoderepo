@@ -4,3 +4,4 @@ review of leetcode
 2017/11/26 one week left for me to prepare ccf/csp, nervous..
 
 2018/3/11 with time goes, there are 7 days left for me to prepare ccf/csp again. it seems like that i have wasted many time. i have learnt about algorithms of graph and tree recently.
+2018/3/19 gg. Even though i have solved 3 problems, but the regards is just 200. There must be some mistakes in the process of output. It was not a disirable result for, however a little bit disappointed, i wouldn't stop the steps of trainning.
